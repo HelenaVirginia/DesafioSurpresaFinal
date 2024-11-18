@@ -1,22 +1,24 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo 2-1.png";
+import { HeaderContainer } from "./Style";
 
-export default function Header() {
-    return(
-        <header>
-            <img src="" alt="logomarca" />
-            <nav>
-                <ul>
-                <li>
-                    <Link>Home</Link>
-                </li>
-                <li>
-                    <Link>Novidades</Link>
-                </li>
-                <li>
-                    <Link>Sobre</Link>
-                </li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+const Header = () => {
+    return (
+        <HeaderContainer>
+            <div className="headerBox">
+                <figure>
+                    <img src={logo} alt="Logomarca Starbucks" />
+                </figure>
+                <nav>
+                    <ul className="navLinks">
+                        <li><Link to="/">Início</Link></li>
+                        <li><Link to="/novidades">Novidades</Link></li>
+                        <li><Link to="/sobre">Sobre Nós</Link></li>
+                    </ul>
+                </nav>
+            </div>
+        </HeaderContainer>
+    );
+};
+
+export default Header;
