@@ -1,98 +1,65 @@
 import styled from "styled-components";
 
-export const StyledNewsSection = styled.section`
+export const Novidades = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .texto {
     flex: 1;
-    height: 100%;
-
-    .mainHomeContent {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        flex: 1;
-        height: 100%;
-        position: relative;
+    h1 {
+      font-size: 2.5rem;
+      color: #025731;
     }
 
-    .homeText {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 100%;
-        padding: 0 60px;
-        margin: 0 50px;
-
-        h1 {
-            font-family: "Inter", serif;
-            font-weight: 300;
-            align-self: flex-start;
-            font-size: 3.2rem;
-        }
-
-        h2 {
-            align-self: flex-start;
-            font-weight: 400;
-            font-size: 3.8rem;
-        }
-
-        span {
-            color: #038c4a;
-            font-weight: 800;
-        }
-
-        p {
-            font-weight: 400;
-            margin-bottom: 25px;
-        }
+    h2 {
+      font-size: 1.8rem;
+      color: #037143;
+      margin-bottom: 10px;
     }
 
-    .bg-green {
-        background-color: #038c4a;
+    p {
+      margin-top: 10px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
     }
 
-    .bg-red {
-        background-color: #8a0a10;
+    .saibaMais {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #037143;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #025731;
+      }
     }
+  }
 
-    .bg-yellow {
-        background-color: #dbcf14;
+  .imageWrapper {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
-
-    .colorCircles {
-        display: flex;
-        border-radius: 50%;
-        position: fixed;
-        top: 28%;
-        right: -28%;
-        width: 950px;
-        aspect-ratio: 1;
-        z-index: 1;
-
-        img {
-            position: absolute;
-            bottom: 50%;
-            right: 52%;
-            width: 45%;
-        }
-    }
-
-    .miniCups {
-        display: flex;
-        width: 260px;
-        justify-content: center;
-        height: 15%;
-        align-self: flex-end;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        margin-bottom: 25px;
-
-        img:hover {
-            transform: translateY(-5px) rotate(15deg);
-            transition: 0.8s ease;
-        }
-    }
+  }
 `;

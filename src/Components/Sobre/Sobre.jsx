@@ -1,28 +1,24 @@
-import coffeeImage from "../../assets/images/Loja.png";
-import { StyledNewsSection } from "./style";
+import * as S from "./style";
+import lojaImage from "../../assets/images/loja.png";
 
-export default function CoffeeHighlights() {
-    return (
-        <StyledNewsSection>
-            <div className="newsText">
-                <h3>CAFÉS PREMIUM</h3>
-                <h2>Tipos de Torrefação</h2>
-                <p>
-                    A torrefação do café pode ser classificada em três tipos principais:
-               
-                    <strong>Torra Clara:</strong> Realça os sabores originais do grão, com notas frutadas e alta acidez. Ideal para cafés especiais.
-                 
-                    <strong>Torra Média:</strong> Apresenta um equilíbrio entre acidez e amargor, com notas de caramelo e chocolate. É uma das preferidas entre os consumidores.
-                 
-                    <strong>Torra Escura:</strong> Intensifica o amargor e traz um sabor encorpado, com notas de chocolate amargo e nozes, além de acidez reduzida.
-                  
-                    Escolher o nível ideal depende do seu gosto e da experiência que deseja ao saborear o café.
-                </p>
-                <button>Descubra Mais</button>
-            </div>
-            <div className="coffeeImageBox">
-                <img src={coffeeImage} alt="Grãos de café torrados em fundo neutro" />
-            </div>
-        </StyledNewsSection>
-    );
+export default function Sobre() {
+  return (
+    <S.Sobre>
+      <div className="content">
+        <div className="imageWrapper">
+          <img src={lojaImage} alt="Interior de uma loja Starbucks" />
+        </div>
+        <div className="textContent">
+          <h2>Descubra o Processo</h2>
+          <h1>Níveis de Torrefação Starbucks</h1>
+          <p>
+            Já escolheu seu tipo de torra favorito? Na Starbucks® oferecemos três
+            níveis: Torra Clara, Média e Escura. Cada um com seu sabor e
+            características únicas para todos os gostos.
+          </p>
+          <button className="exploreButton">Explorar Mais</button>
+        </div>
+      </div>
+    </S.Sobre>
+  );
 }

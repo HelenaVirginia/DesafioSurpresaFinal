@@ -37,11 +37,11 @@ export default function HomePage() {
                     <h1> Muito mais que Café</h1>
                     <h2>Isso é <span>Starbucks</span></h2>
                     <p>
-                        Descubra os sabores únicos da Starbucks, que vão desde clássicos como
-                        Caffè Americano, Cappuccino e Espresso até sanduíches e doces
-                        diferenciados para todos os gostos.
+                    A Starbucks oferece uma variedade de cafés de alta qualidade. 
+                    Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. 
+                    Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.
                     </p>
-                    <button>Explore Mais</button>
+                    <button>Saiba Mais</button>
                 </div>
                 <figure className="miniCups">
                     <img

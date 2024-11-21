@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
+    
     flex: 1;
     height: 100%;
+      flex-direction: column;
+      align-items: center;
 
     .mainHomeContent {
         display: flex;
@@ -28,12 +31,14 @@ export const StyledSection = styled.section`
             font-weight: 300;
             align-self: flex-start;
             font-size: 3.2rem;
+             margin-bottom: 5px;
         }
 
         h2 {
             align-self: flex-start;
             font-weight: 400;
             font-size: 3.8rem;
+            margin-top: 15px;
         }
 
         span {
@@ -42,8 +47,7 @@ export const StyledSection = styled.section`
         }
 
         p {
-            font-weight: 400;
-            margin-bottom: 25px;
+            font-size: 1.5rem;
         }
     }
 
@@ -58,7 +62,7 @@ export const StyledSection = styled.section`
     .bg-yellow {
         background-color: #dbcf14;
     }
-
+    
     .colorCircles {
         display: flex;
         border-radius: 50%;
@@ -88,11 +92,26 @@ export const StyledSection = styled.section`
         left: 0;
         right: 0;
         margin: auto;
-        margin-bottom: 25px;
-
-        img:hover {
-            transform: translateY(-5px) rotate(15deg);
-            transition: 0.8s ease;
-        }
+        padding-right: 20px;
+        margin-bottom: 70px;
     }
+        button {
+        background-color: #037143;
+        color: white;
+        border-style: none;
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        border-radius: 35px;
+        padding: 20px 80px;
+        margin: 20px 0;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        &:hover {
+          background-color: #025130;
+        }
+      }
+    }
+  }
 `;
