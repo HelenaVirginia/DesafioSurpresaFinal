@@ -1,4 +1,4 @@
-import { useState } from "react"; // Certifique-se de importar useState
+import { useState } from "react"; 
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo 2-1.png";
 import { HeaderContainer } from "./Style";

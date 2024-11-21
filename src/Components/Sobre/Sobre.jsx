@@ -1,5 +1,5 @@
 import * as S from "./style";
-import lojaImage from "../../assets/images/loja.png";
+import lojaImage from "../../assets/images/Loja.png";
 
 export default function Sobre() {
   return (
@@ -18,6 +18,8 @@ export default function Sobre() {
           </p>
           <button className="exploreButton">Explorar Mais</button>
         </div>
+        <img src="/assets/images/loja.png" alt="Loja" />
+
       </div>
     </S.Sobre>
   );
