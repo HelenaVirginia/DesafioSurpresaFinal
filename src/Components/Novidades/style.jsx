@@ -6,6 +6,9 @@ export const Novidades = styled.section`
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  background: #1E3932;
+
+
 
   .content {
     display: flex;
@@ -20,12 +23,12 @@ export const Novidades = styled.section`
     flex: 1;
     h1 {
       font-size: 2.5rem;
-      color: #025731;
+      color: #ffff;
     }
 
     h2 {
       font-size: 1.8rem;
-      color: #037143;
+      color: #ffff;
       margin-bottom: 10px;
     }
 
@@ -33,17 +36,21 @@ export const Novidades = styled.section`
       margin-top: 10px;
       font-size: 1rem;
       line-height: 1.5;
-      color: #333;
+      color: #ffff;
     }
 
     .saibaMais {
-      margin-top: 15px;
-      padding: 10px 20px;
+      margin: 20px 0;
+      padding: 20px 80px;
       background-color: #037143;
       color: #fff;
-      border: none;
+      border-style: none;
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      fonr-weight: 700;
+      border-radius: 35px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.4s ease;
 
       &:hover {
         background-color: #025731;

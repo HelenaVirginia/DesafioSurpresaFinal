@@ -48,14 +48,17 @@ export const Sobre = styled.section`
     }
 
     .exploreButton {
-      padding: 10px 20px;
+      margin: 20px 0;
+      padding: 20px 80px;
       background-color: #037143;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
+      color: #fff;
+      border-style: none;
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      fonr-weight: 700;
+      border-radius: 35px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.4s ease;
 
       &:hover {
         background-color: #025731;

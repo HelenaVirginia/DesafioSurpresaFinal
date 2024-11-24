@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
     
-    flex: 1;
-    height: 100%;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  margin: 0 0 0 5%; 
 
     .mainHomeContent {
         display: flex;
@@ -84,7 +86,7 @@ export const StyledSection = styled.section`
     .miniCups {
         display: flex;
         width: 260px;
-        justify-content: center;
+        justify-content: space-around;
         height: 15%;
         align-self: flex-end;
         position: absolute;

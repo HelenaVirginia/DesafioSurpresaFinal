@@ -18,7 +18,7 @@ export default function Sobre() {
           </p>
           <button className="exploreButton">Explorar Mais</button>
         </div>
-        <img src="/assets/images/loja.png" alt="Loja" />
+        
 
       </div>
     </S.Sobre>
